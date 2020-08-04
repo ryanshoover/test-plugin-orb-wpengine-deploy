@@ -1,7 +1,7 @@
 version: 2.1
 
 orbs:
-    wpengine: ryanshoover/wpengine@0.4
+    wpengine: ryanshoover/wpengine@dev:alpha
 
 workflows:
     version: 2
@@ -17,8 +17,8 @@ workflows:
                         only: /^\d+\.\d+\.\d+$/
             - wpengine/codeception:
                 context: DXT
-                package_name: PACKAGE_NAME
-                package_type: plugin|theme
+                package_name: test-plugin-orb-wpengine=deploy
+                package_type: plugin
                 filters:
                     branches:
                         only: /.*/
