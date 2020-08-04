@@ -9,14 +9,14 @@ workflows:
     test-deploy:
         jobs:
             - wpengine/lint:
-                context: DXT
+                context: orb-test
                 filters:
                     branches:
                         only: /.*/
                     tags:
                         only: /^\d+\.\d+\.\d+$/
             - wpengine/codeception:
-                context: DXT
+                context: orb-test
                 package_name: test-plugin-orb-wpengine=deploy
                 package_type: plugin
                 filters:
@@ -25,7 +25,7 @@ workflows:
                     tags:
                         only: /^\d+\.\d+\.\d+$/
             - wpengine/deploy_fury:
-                context: DXT
+                context: orb-test
                 filters:
                     branches:
                         ignore: /.*/
