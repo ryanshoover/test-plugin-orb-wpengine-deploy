@@ -1,0 +1,12 @@
+{
+	"scripts": {
+		"build": "dxt-compiler build",
+		"lint": "dxt-compiler lint",
+		"clean": "dxt-compiler clean",
+		"watch": "dxt-compiler start",
+		"start": "dxt-compiler start",
+		"css": "dxt-compiler css",
+		"js": "dxt-compiler js",
+		"images": "dxt-compiler images"
+	}
+}

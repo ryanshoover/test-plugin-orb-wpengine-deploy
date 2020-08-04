@@ -1,0 +1,25 @@
+{
+	"name": "ryanshoover/test-plugin-orb-wpengine-deploy",
+	"description": "Plugin used solely for testing functional in orb-wpengine-deploy",
+	"type": "wordpress-plugin",
+	"license": "GPL3",
+	"authors": [
+		{
+			"name": "Ryan Hoover",
+			"email": "ryan.hoover@wpengine.com"
+		}
+	],
+	"require": {},
+	"repositories": {
+		"fury": {
+			"type": "composer",
+			"url": "https://php.fury.io/wpedxt/"
+		}
+	},
+	"require-dev": {
+		"wpengine/dxt-tester": "*"
+	},
+	"scripts": {
+		"lint": "composer dxt:lint"
+	}
+}
