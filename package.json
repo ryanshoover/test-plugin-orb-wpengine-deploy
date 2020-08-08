@@ -1,12 +1,20 @@
 {
+	"name": "test-plugin-orb-wpengine-deploy",
+	"version": "1.0.0",
+	"description": "Plugin used solely for testing functional in orb-wpengine-deploy",
+	"main": "index.js",
+	"repository": "git@github.com:ryanshoover/test-plugin-orb-wpengine-deploy.git",
+	"author": "Ryan Hoover <ryan.hoover@wpengine.com>",
+	"license": "GPL-3.0-or-later",
 	"scripts": {
-		"build": "dxt-compiler build",
-		"lint": "dxt-compiler lint",
-		"clean": "dxt-compiler clean",
-		"watch": "dxt-compiler start",
-		"start": "dxt-compiler start",
-		"css": "dxt-compiler css",
-		"js": "dxt-compiler js",
-		"images": "dxt-compiler images"
+		"build": "webpack --config webpack.config.js",
+		"lint": "eslint src/js --ext .js"
+	},
+	"devDependencies": {
+		"eslint": "^7.6.0",
+		"eslint-loader": "^4.0.2",
+		"js-cookie": "^2.2.1",
+		"webpack": "^4.44.1",
+		"webpack-cli": "^3.3.12"
 	}
 }

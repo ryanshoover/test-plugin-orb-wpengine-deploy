@@ -9,6 +9,9 @@
 /node_modules/
 auth.json
 
+# Build files
+/dist/
+
 # Backstop result files
 /tests/backstop/results/*
 

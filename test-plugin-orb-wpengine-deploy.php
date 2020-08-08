@@ -20,6 +20,19 @@
 namespace OrbTest\Plugin;
 
 add_action(
+	'wp_enqueue_scripts',
+	function() {
+		wp_enqueue_script(
+			'test-plugin-orb-wpengine-deploy',
+			plugin_dir_url( __FILE__ ) . 'dist/main.js',
+			[],
+			filemtime( plugin_dir_path( __FILE__ ) . 'dist/main.js' ),
+			true
+		);
+	}
+);
+
+add_action(
 	'wp_footer',
 	function() {
 		require plugin_dir_path( __FILE__ ) . 'templates/footer.php';
