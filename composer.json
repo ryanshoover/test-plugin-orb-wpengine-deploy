@@ -11,7 +11,7 @@
 	],
 	"require": {},
 	"scripts": {
-		"lint": "phpcs --ignore=vendor,tests --standard=WordPress ."
+		"lint": "phpcs --ignore=vendor,tests --standard=WordPress --extensions='.php' ."
 	},
 	"require-dev": {
 		"squizlabs/php_codesniffer": "^3.5",
