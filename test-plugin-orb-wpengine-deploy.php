@@ -19,6 +19,8 @@
 
 namespace OrbTest\Plugin;
 
+define( __NAMESPACE__ . '\SLUG', 'orbtest-plugin' );
+
 add_action(
 	'wp_enqueue_scripts',
 	function() {

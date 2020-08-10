@@ -8,3 +8,7 @@ modules:
         - WPLoader
         - Asserts
         - \Helper\Wpunit
+    config:
+          WPLoader:
+              plugins: [ 'test-plugin-orb-wpengine-deploy/test-plugin-orb-wpengine-deploy.php' ]
+              activatePlugins: [ 'test-plugin-orb-wpengine-deploy/test-plugin-orb-wpengine-deploy.php' ]
