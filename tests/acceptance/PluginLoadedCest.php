@@ -10,9 +10,9 @@ class PluginLoadedCest {
 	}
 
 	public function test_footer_template( AcceptanceTester $I ) {
-		$I->amOn( '/' );
-        $I->amOn( '/?p=1' );
+		$I->amOnPage( '/' );
+		$I->amOnPage( '/?p=1' );
 
-        $I->seeCookie( 'test-plugin-orb-wpengine-deploy' );
+		$I->seeCookie( 'test-plugin-orb-wpengine-deploy' );
 	}
 }
