@@ -29,6 +29,8 @@ workflows:
 
             - wpengine/codeception:
                 context: orb-test
+                package_type: plugin
+                package_name: test-plugin-orb-wpengine-deploy
                 requires:
                     - wpengine/build
                 filters:
