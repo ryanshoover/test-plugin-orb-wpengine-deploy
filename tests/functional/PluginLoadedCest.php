@@ -10,7 +10,7 @@ class PluginLoadedCest {
 	}
 
 	public function test_footer_template( FunctionalTester $I ) {
-		$I->amOn( '/' );
+		$I->amOnPage( '/' );
 		$I->see( 'Plugin used solely for testing functional in orb-wpengine-deploy.' );
 	}
 }
